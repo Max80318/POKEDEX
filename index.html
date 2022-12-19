@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <hed>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="STYLESHEET" type="text/css" href="Estilos-Poke.css" >
+        <title>POKEDEX</title>
+    </hed>
+    <body>
+        <section class="contenedor-principal">
+            <div class="titulo">
+                <img src="./src/logo.jpeg" id="logo">
+                <audio controls  autoplay  loop>
+                    <source src="./src/musica.mp3"  type="audio/mp3">
+                </audio>
+            </div>
+                <!--Contenedor del pokedex-->
+            <div class="contenedor-pokedex">
+                <!--parete izqu-->
+                <div class="izquierda-cont">
+                    <div class="Luces">
+                        <div class="contenedor-luces">
+                            <div class="circulo-azul"></div>
+                            <div class="peque-cont">
+                                <div class="peque-rojo"></div>
+                                <div class="peque-amarillo"></div>
+                                <div class="peque-verde"></div>
+                            </div>
+                        </div>
+                        <svg heigth="50" width="320" class="left-svg-top">
+                            <polyline points="0,72 105,72 120,45 350,45  " style="fill:none; stroke:black; stroke-width:3 "></polyline>
+                        </svg>
+                    </div>
+                    <div class="pantalla">
+                        <div class="pantalla-prin">
+                            <div class="cont-botonesM">
+                                <div class="bot-mini"></div>
+                                <div class="bot-mini"></div>
+                            </div>
+                            <div class="screen-cont">
+                                <div id="main" >
+                                    <img src="./src/pokeball.png" alt="Pokemon" id="pokeImg" width="100px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datos-salida">
+                            <span id="name">Nombre</span>
+                            <span id="number">#</span>
+                        </div>
+                    </div>
+                    <div class="Botones">
+                        <div class="b-cont">
+                            <div class="b-boton"></div>
+                            <div class="lineas">
+                                <div class="linea1"></div>
+                                <div class="linea2"></div>
+                            </div>
+                        </div>
+                        <div class="busc-cont">
+                            <div class="buscador-poke">
+                                <input type="text" placeholder="ID/NAME" id="pokeName" name="pokeName" p >
+                            </div>
+                            <div class="bton-poke">
+                                <button onclick="fetchPokemon()"><img  id="icon" src="./src/buscar.png"></audio></button>
+                            </div>
+                            <div class="b-poke-cont">
+                                <div class="b-b">
+                                    <div class="l-vertical"></div>
+                                    <div class="l-horizontal"></div>
+                                </div>
+                                <div class="puntos">
+                                    <div class="musica" ></div>
+                                    <div class="space-point"><b>. . .</b></div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--parte derecha-->                
+                <div class="derecha-cont">
+                    <div class="datos">
+                        <div class="contenedor-datos"><span id="weight">#</span></div>
+                        <div class="contenedor-datos"><span id="height">#</span></div>
+                        <div class="contenedor-datos"><span id="bExp">#</span></div>
+                        <div class="contenedor-datos"><span id="type">#</span></div>
+                    </div>
+                    <div class="contenedor-d2">
+                        <div class="contdatos"><span id="abilities">#</span></div>
+                        <div class="contdatos2"><span id="stats">#</span></div>
+                    </div>
+                    <div class="boton-adicional">
+                        <div class="boton-blancoC">
+                            <div class="botonB"></div>
+                            <div class="botonB"></div>
+                        </div>
+                        <div class="botonF"></div>
+                        <div class="botonF2"></div>
+                        <div><B>. . . . . .</B></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <script src="./pokeJs.js"></script>
+        </footer>
+    </body>
+</html>
